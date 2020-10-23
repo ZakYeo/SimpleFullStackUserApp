@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Users</title>
+        <meta name="description" content="APP Web Task 5">
+        <meta name="author" content="SitePoint">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    </head>
+  
+    <body class="w3-container w3-teal" >
+    <header ><h2 class="w3-animate-fading w3-center">Zak's Web App</h2></header>
+    <div >
+            <section id="sectUsers" class="w3-col s6 w3-grey w3-center w3-animate-left w3-round-large">
+                <div class="w3-border w3-border-black w3-round-large">
+                    <h2 >Users</h2>
+                    <div id="divPageNumber">Page <span id="pageNumber">1</span> of <span id="totalPages">1</span></div>
+                    <button id="btnPrevious" >Previous</button><button id="btnNext" >Next</button>
+                    <table id="tblUsers">
+                        <tbody><tr  id="tblUserHeader">
+                            <th width="200">User ID</th>
+                            <th width="200">Email</th>
+                            <th width="200">First Name</th>
+                            <th width="200">Last Name</th>
+                            <th width="200">Avatar</th>
+                        </tr>
+                    <tr  id="user1" class = "w3-hover-sepia "><td ></td><td ></td><td></td><td></td><td ></td></tr>
+					<tr  id="user2" class = "w3-hover-sepia "><td ></td><td ></td><td></td><td></td><td ></td></tr>
+					<tr  id="user3" class = "w3-hover-sepia "><td ></td><td ></td><td></td><td></td><td ></td></tr>
+					<tr  id="user4" class = "w3-hover-sepia "><td ></td><td ></td><td></td><td></td><td ></td></tr>
+					<tr  id="user5" class = "w3-hover-sepia "><td ></td><td ></td><td></td><td></td><td ></td></tr>
+					<tr  id="user6" class = "w3-hover-sepia "><td ></td><td ></td><td></td><td></td><td ></td></tr></tbody></table>
+                </div>
+            </section>
+            <section id="sectUser" class="w3-col s6 w3-center w3-center w3-grey w3-animate-right w3-border w3-border-black w3-round-large">
+                <div>
+                    <h2 >User</h2>
+                    <div >
+                        <img id="userAvatar" src="" alt="" width="128" height="128">
+                        <form id="frmUser" >
+                            <label>User ID:</label>
+                            <input class="w3-input" type="text" id="userID"><br>
+                            <label>Email:</label>
+                            <input class="w3-input" type="text" id="userEmail" ><br>
+                            <label>First Name:</label>
+                            <input class="w3-input" type="text" id="userFirstName" ><br>
+                            <label>Last Name:</label>
+                            <input class="w3-input" type="text" id="userLastName" >
+                            <div >
+                                <button id="btnSaveUser" >Save Changes</button>
+                                <button id="btnDeleteUser" >Delete User</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div>
+                    <h2 >New User</h2>
+                    <div >
+                        <form id="frmNewUser" >
+                            <label>Email:</label>
+                            <input class="w3-input" type="text" id="newUserEmail" ><br>
+                            <label>First Name:</label>
+                            <input class="w3-input" type="text" id="newUserFirstName" ><br>
+                            <label>Last Name:</label>
+                            <input class="w3-input" type="text" id="newUserLastName" ><br>
+                            <label>Avatar:</label>
+                            <input class="w3-input" type="text" id="newAvatar" ><br>
+                            <div >
+                                <button id="btnNewUser" >New User</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+    </div>
+	<script src="js/script.js"></script>
+    </body>
+</html>
